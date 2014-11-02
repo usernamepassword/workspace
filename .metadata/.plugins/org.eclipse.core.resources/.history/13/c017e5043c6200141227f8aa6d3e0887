@@ -1,0 +1,17 @@
+package com.nadimeazizi.startingproject.data;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class NotesDataSource {
+
+	public List<NoteItem> findAll() {
+		
+		List<NoteItem> noteList = new ArrayList<NoteItem>();
+		NoteItem note = NoteItem.getNew();
+		noteList.add(note);
+		return noteList;
+		
+	}
+	
+}

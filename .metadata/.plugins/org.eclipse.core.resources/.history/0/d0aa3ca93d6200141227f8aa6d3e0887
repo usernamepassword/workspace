@@ -1,0 +1,25 @@
+package com.nadimeazizi.startingproject.data;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class NotesDataSource {
+
+	public List<NoteItem> findAll() {
+		
+		List<NoteItem> noteList = new ArrayList<NoteItem>();
+		NoteItem note = NoteItem.getNew();
+		noteList.add(note);
+		return noteList;
+		
+	} //end main
+	
+	public boolean update(NoteItem note) {
+		return true;
+	} //end update method
+	
+	public boolean remove(NoteItem note) {
+		return true;
+	} //end remove method
+	
+} //end class
